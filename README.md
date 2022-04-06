@@ -1,0 +1,2 @@
+# StringRegExp
+$iH = 4.0000 ElseIf StringIsAlpha($sStr) Then $iH = 4.7004 If $fCase Then If StringRegExp($sStr, '[[:lower:]]') And StringRegExp($sStr, '[[:upper:]]') Then $iH = 5.7004 EndIf ElseIf StringIsAlNum($sStr) Then $iH = 5.1699 If $fCase Then If StringRegExp($sStr, '[[:lower:]]') And StringRegExp($sStr, '[[:upper:]]') Then $iH = 5.9542 EndIf ElseIf StringRegExp($sStr, '^[^[:cntrl:]x7F]+$') Then $iH = 6.5699 ElseIf _StringRegExp($sStr, '^[^[:cntrl:]x7Fx81x8Dx8Fx90x9D]+$') Then $iH = 7.7682 EndIf Return $iH * $iLen EndFunc
